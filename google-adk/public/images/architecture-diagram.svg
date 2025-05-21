@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="350px" viewBox="0 0 800 350" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="blueGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#3ECF8E" />
+        </linearGradient>
+        <linearGradient id="redYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#EA4335" />
+            <stop offset="100%" stop-color="#FBBC05" />
+        </linearGradient>
+        <linearGradient id="yellowGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FBBC05" />
+            <stop offset="100%" stop-color="#34A853" />
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- User -->
+        <circle cx="100" cy="50" r="30" fill="#F1F1F1" stroke="#333333" stroke-width="2"/>
+        <text x="100" y="55" font-family="Arial" font-size="16" fill="#333333" text-anchor="middle">👤</text>
+        <text x="100" y="90" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">User</text>
+        
+        <!-- Frontend -->
+        <rect x="300" y="30" width="120" height="60" rx="5" fill="#4285F4" opacity="0.8"/>
+        <text x="360" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Frontend</text>
+        <text x="360" y="85" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Next.js</text>
+        
+        <!-- ADK Web Server -->
+        <rect x="580" y="30" width="120" height="60" rx="5" fill="#EA4335" opacity="0.8"/>
+        <text x="640" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle">ADK Web Server</text>
+        <text x="640" y="85" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Google ADK</text>
+        
+        <!-- Supabase -->
+        <rect x="300" y="180" width="120" height="60" rx="5" fill="#3ECF8E" opacity="0.8"/>
+        <text x="360" y="215" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Supabase</text>
+        <text x="360" y="235" font-family="Arial" font-size="12" fill="white" text-anchor="middle">PostgreSQL</text>
+        
+        <!-- LLM API -->
+        <rect x="580" y="180" width="120" height="60" rx="5" fill="#FBBC05" opacity="0.8"/>
+        <text x="640" y="215" font-family="Arial" font-size="14" fill="white" text-anchor="middle">LLM API</text>
+        <text x="640" y="235" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Gemini/Groq</text>
+        
+        <!-- MCP Code Generator -->
+        <rect x="440" y="280" width="120" height="60" rx="5" fill="#34A853" opacity="0.8"/>
+        <text x="500" y="315" font-family="Arial" font-size="14" fill="white" text-anchor="middle">MCP Code</text>
+        <text x="500" y="335" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Generator</text>
+        
+        <!-- Connection lines -->
+        <!-- User to Frontend -->
+        <path d="M130,60 L290,60" stroke="#333333" stroke-width="2" stroke-dasharray="5,3"/>
+        <polygon points="290,60 280,55 280,65" fill="#333333"/>
+        
+        <!-- Frontend to ADK Web -->
+        <path d="M430,60 L570,60" stroke="url(#blueGreen)" stroke-width="2"/>
+        <polygon points="570,60 560,55 560,65" fill="#EA4335"/>
+        
+        <!-- Frontend to Supabase -->
+        <path d="M360,100 L360,170" stroke="url(#blueGreen)" stroke-width="2"/>
+        <polygon points="360,170 355,160 365,160" fill="#3ECF8E"/>
+        
+        <!-- ADK to LLM -->
+        <path d="M640,100 L640,170" stroke="url(#redYellow)" stroke-width="2"/>
+        <polygon points="640,170 635,160 645,160" fill="#FBBC05"/>
+        
+        <!-- ADK to Supabase -->
+        <path d="M580,60 C520,60 520,210 430,210" stroke="url(#redYellow)" stroke-width="2" stroke-dasharray="5,3"/>
+        <polygon points="430,210 440,205 440,215" fill="#3ECF8E"/>
+        
+        <!-- ADK to Code Generator -->
+        <path d="M640,240 L640,310 L570,310" stroke="url(#yellowGreen)" stroke-width="2"/>
+        <polygon points="570,310 580,305 580,315" fill="#34A853"/>
+        
+        <!-- Code Generator to Supabase -->
+        <path d="M440,310 L360,310 L360,250" stroke="#34A853" stroke-width="2" stroke-dasharray="5,3"/>
+        <polygon points="360,250 355,260 365,260" fill="#3ECF8E"/>
+        
+        <!-- Data flows -->
+        <text x="210" y="45" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">User Requests</text>
+        <text x="500" y="45" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">REST API</text>
+        <text x="390" y="140" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">DB Queries</text>
+        <text x="670" y="140" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Prompts</text>
+        <text x="520" y="295" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Code Gen</text>
+        <text x="400" y="295" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Store Results</text>
+    </g>
+</svg>

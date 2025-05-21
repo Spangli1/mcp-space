@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="100px" viewBox="0 0 800 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#34A853" />
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Flow lines -->
+        <path d="M100,50 L700,50" stroke="url(#gradient)" stroke-width="2" stroke-linecap="round" stroke-dasharray="10,5" />
+        
+        <!-- Nodes -->
+        <circle cx="150" cy="50" r="20" fill="#4285F4" />
+        <circle cx="300" cy="50" r="20" fill="#FBBC05" />
+        <circle cx="450" cy="50" r="20" fill="#34A853" />
+        <circle cx="600" cy="50" r="20" fill="#EA4335" />
+        
+        <!-- Icons -->
+        <text x="150" y="55" font-family="Arial" font-size="16" fill="white" text-anchor="middle">🧠</text>
+        <text x="300" y="55" font-family="Arial" font-size="16" fill="white" text-anchor="middle">📋</text>
+        <text x="450" y="55" font-family="Arial" font-size="16" fill="white" text-anchor="middle">🔄</text>
+        <text x="600" y="55" font-family="Arial" font-size="16" fill="white" text-anchor="middle">📝</text>
+    </g>
+</svg>

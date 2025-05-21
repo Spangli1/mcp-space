@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#EA4335" />
+            <stop offset="50%" stop-color="#FBBC05" />
+            <stop offset="100%" stop-color="#34A853" />
+        </linearGradient>
+        <linearGradient id="featureGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#EA4335" />
+            <stop offset="100%" stop-color="#FBBC05" />
+        </linearGradient>
+        <linearGradient id="featureGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#34A853" />
+        </linearGradient>
+        <linearGradient id="featureGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#34A853" />
+            <stop offset="100%" stop-color="#3ECF8E" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0, 100)">
+        <!-- Central Hexagon with Google ADK logo -->
+        <path d="M400,40 L480,85 L480,155 L400,200 L320,155 L320,85 Z" fill="url(#hexGradient)" opacity="0.15" />
+        <path d="M400,40 L480,85 L480,155 L400,200 L320,155 L320,85 Z" stroke="url(#hexGradient)" stroke-width="3" fill="none" />
+        <text x="400" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Google ADK</text>
+        <circle cx="400" cy="105" r="25" fill="#4285F4" opacity="0.8" />
+        <text x="400" y="115" font-family="Arial" font-size="20" fill="white" text-anchor="middle">🤖</text>
+
+        <!-- Feature 1: Conversational Interface -->
+        <g transform="translate(100, 40)">
+            <rect x="0" y="0" width="190" height="95" rx="10" fill="url(#featureGradient1)" opacity="0.8" />
+            <circle cx="30" cy="25" r="18" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="30" y="32" font-family="Arial" font-size="20" fill="white" text-anchor="middle">🤝</text>
+            <text x="110" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Conversational</text>
+            <text x="90" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Interface</text>
+            <text x="10" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="start">Natural language requirements</text>
+            <text x="10" y="78" font-family="Arial" font-size="10" fill="white" text-anchor="start">gathering</text>
+        </g>
+        <line x1="320" y1="95" x2="288" y2="95" stroke="#EA4335" stroke-width="2" stroke-dasharray="5,3" />
+        
+        <!-- Feature 2: Orchestrated Workflow -->
+        <g transform="translate(100, 200)">
+            <rect x="0" y="0" width="190" height="80" rx="10" fill="url(#featureGradient2)" opacity="0.8" transform="rotate(-5 60 35)" />
+            <circle cx="30" cy="28" r="18" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="30" y="35" font-family="Arial" font-size="20" fill="white" text-anchor="middle">🔄</text>
+            <text x="100" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle" transform="rotate(-5 60 35)">Orchestrated</text>
+            <text x="95" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle"  transform="rotate(-5 60 35)">Workflow</text>
+            <text x="30" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="start"  transform="rotate(-5 60 35)">Sequential agent execution</text>
+        </g>
+        <line x1="320" y1="155" x2="285" y2="200" stroke="#4285F4" stroke-width="2" stroke-dasharray="5,3" />
+        
+        <!-- Feature 3: Code Generation -->
+        <g transform="translate(340, -60)">
+            <rect x="-20" y="0" width="180" height="80" rx="10" fill="url(#featureGradient3)" opacity="0.8" transform="rotate(5 60 35)" />
+            <circle cx="10" cy="25" r="18" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="10" y="32" font-family="Arial" font-size="20" fill="white" text-anchor="middle">📝</text>
+            <text x="75" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle" transform="rotate(5 60 35)">Automatic</text>
+            <text x="75" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle" transform="rotate(5 60 35)">Code Gen</text>
+            <text x="70" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle" transform="rotate(5 60 35)">TypeScript MCP implementations</text>
+        </g>
+        <line x1="400" y1="10" x2="400" y2="40" stroke="#34A853" stroke-width="2" stroke-dasharray="5,3" />
+        
+        <!-- Feature 4: Project Files -->
+        <g transform="translate(520, 60)">
+            <rect x="0" y="0" width="180" height="78" rx="10" fill="url(#featureGradient1)" opacity="0.8" />
+            <circle cx="30" cy="25" r="18" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="30" y="32" font-family="Arial" font-size="20" fill="white" text-anchor="middle">⚙️</text>
+            <text x="95" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Project File</text>
+            <text x="95" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Creation</text>
+            <text x="87" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Complete project configuration</text>
+        </g>
+        <line x1="520" y1="95" x2="480" y2="95" stroke="#FBBC05" stroke-width="2" stroke-dasharray="5,3" />
+        
+        <!-- Feature 5: Integration -->
+        <g transform="translate(520, 180)">
+            <rect x="0" y="0" width="170" height="80" rx="10" fill="url(#featureGradient2)" opacity="0.8" transform="rotate(5 60 35)" />
+            <circle cx="30" cy="25" r="18" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="30" y="32" font-family="Arial" font-size="20" fill="white" text-anchor="middle">🔌</text>
+            <text x="95" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle" transform="rotate(5 60 35)">Seamless</text>
+            <text x="95" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle" transform="rotate(5 60 35)">Integration</text>
+            <text x="80" y="68" font-family="Arial" font-size="10" fill="white" text-anchor="middle" transform="rotate(5 60 35)">Frontend application integration</text>
+        </g>
+        <line x1="524" y1="180" x2="480" y2="155" stroke="#3ECF8E" stroke-width="2" stroke-dasharray="5,3" />
+        
+        <!-- Floating gear animation -->
+        <g>
+            <path d="M130,165 A20,20 0 1,0 170,165 A20,20 0 1,0 130,165 Z" stroke="#4285F4" stroke-width="3" fill="none">
+            <animateTransform 
+            attributeName="transform"
+            type="rotate"
+            from="0 150 165"
+            to="360 150 165"
+            dur="20s"
+            repeatCount="indefinite"/>
+            </path>
+            <path d="M150,145 L150,185 M130,165 L170,165" stroke="#4285F4" stroke-width="3">
+            <animateTransform 
+            attributeName="transform"
+            type="rotate"
+            from="0 150 165"
+            to="360 150 165"
+            dur="20s"
+            repeatCount="indefinite"/>
+            </path>
+        </g>
+        
+        <g>
+            <path d="M550,20 A15,15 0 1,0 580,20 A15,15 0 1,0 550,20 Z" stroke="#EA4335" stroke-width="2" fill="none">
+            <animateTransform 
+            attributeName="transform"
+            type="rotate"
+            from="0 565 20"
+            to="-360 565 20"
+            dur="15s"
+            repeatCount="indefinite"/>
+            </path>
+            <path d="M565,5 L565,35 M550,20 L580,20" stroke="#EA4335" stroke-width="2">
+            <animateTransform 
+            attributeName="transform"
+            type="rotate"
+            from="0 565 20"
+            to="-360 565 20"
+            dur="15s"
+            repeatCount="indefinite"/>
+            </path>
+        </g>
+    </g>
+</svg>

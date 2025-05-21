@@ -1,0 +1,3 @@
+google-adk
+sqlalchemy
+python-dotenv
