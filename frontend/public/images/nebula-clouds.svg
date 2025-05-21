@@ -1,0 +1,77 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="nebulaGradient1" cx="30%" cy="30%" r="70%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="nebulaGradient2" cx="70%" cy="60%" r="60%" fx="70%" fy="60%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#14b8a6" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#0d9488" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="nebulaGradient3" cx="50%" cy="40%" r="50%" fx="50%" fy="40%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#ec4899" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#db2777" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#be185d" stop-opacity="0"/>
+    </radialGradient>
+    
+    <filter id="nebulaBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+    </filter>
+  </defs>
+  
+  <!-- Background stars -->
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+  <!-- Nebula clouds -->
+  <g filter="url(#nebulaBlur)">
+    <!-- Main nebula formation -->
+    <ellipse cx="300" cy="250" rx="280" ry="200" fill="url(#nebulaGradient1)" opacity="0.6"/>
+    <ellipse cx="500" cy="350" rx="250" ry="180" fill="url(#nebulaGradient2)" opacity="0.5"/>
+    <ellipse cx="400" cy="200" rx="200" ry="150" fill="url(#nebulaGradient3)" opacity="0.4"/>
+    
+    <!-- Additional nebula features -->
+    <path d="M200,100 Q300,50 400,150 T600,200 Q700,250 650,350 T450,450 Q350,500 250,400 T150,300 Q100,200 200,100Z" 
+          fill="#8b5cf6" opacity="0.15" filter="url(#nebulaBlur)"/>
+    
+    <path d="M300,200 Q400,150 500,250 T650,300 Q700,350 600,400 T450,450 Q350,500 300,400 T200,300 Q150,250 300,200Z" 
+          fill="#2dd4bf" opacity="0.12" filter="url(#nebulaBlur)"/>
+  </g>
+  
+  <!-- Star clusters -->
+  <g>
+    <!-- Cluster 1 -->
+    <circle cx="250" cy="150" r="2" fill="white" opacity="0.9"/>
+    <circle cx="260" cy="155" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="270" cy="145" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="245" cy="160" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="255" cy="140" r="1.7" fill="white" opacity="0.9"/>
+    
+    <!-- Cluster 2 -->
+    <circle cx="520" cy="300" r="2" fill="white" opacity="0.9"/>
+    <circle cx="530" cy="310" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="510" cy="305" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="525" cy="295" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="515" cy="315" r="1.7" fill="white" opacity="0.9"/>
+    
+    <!-- Cluster 3 -->
+    <circle cx="350" cy="400" r="2" fill="white" opacity="0.9"/>
+    <circle cx="360" cy="405" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="340" cy="410" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="355" cy="395" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="345" cy="415" r="1.7" fill="white" opacity="0.9"/>
+  </g>
+  
+  <!-- Dust lanes and tendrils -->
+  <path d="M150,200 Q250,220 300,180 T450,230 Q550,250 600,200" 
+        stroke="#94a3b8" stroke-width="10" fill="none" opacity="0.05" filter="url(#nebulaBlur)"/>
+  
+  <path d="M200,350 Q300,320 350,380 T500,330 Q600,310 650,380" 
+        stroke="#94a3b8" stroke-width="8" fill="none" opacity="0.05" filter="url(#nebulaBlur)"/>
+</svg>

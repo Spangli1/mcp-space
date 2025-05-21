@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#000022" />
+            <stop offset="100%" stop-color="#220033" />
+        </linearGradient>
+        <linearGradient id="folderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3ECF8E" />
+            <stop offset="100%" stop-color="#4285F4" />
+        </linearGradient>
+        <linearGradient id="fileGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#7B68EE" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+        <!-- Animation definitions -->
+        <style>
+            @keyframes pulse {
+                0% { opacity: 0.4; }
+                50% { opacity: 0.8; }
+                100% { opacity: 0.4; }
+            }
+            .pulsing {
+                animation: pulse 3s infinite ease-in-out;
+            }
+            @keyframes rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            .rotating {
+                animation: rotate 20s linear infinite;
+                transform-origin: center;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="800" height="400" fill="url(#bgGradient)"/>
+    
+    <!-- Stars -->
+    <g class="pulsing">
+        <circle cx="50" cy="30" r="1" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="120" cy="50" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="200" cy="25" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="280" cy="15" r="1" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="350" cy="40" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="430" cy="20" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="500" cy="35" r="1" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="550" cy="25" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="620" cy="15" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="690" cy="45" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="750" cy="30" r="1" fill="#FFFFFF" opacity="0.7" />
+    </g>
+    
+    <!-- Orbital grid -->
+    <circle cx="400" cy="200" r="180" stroke="#3ECF8E" stroke-width="0.5" opacity="0.3" fill="none"/>
+    <circle cx="400" cy="200" r="150" stroke="#3ECF8E" stroke-width="0.5" opacity="0.2" fill="none"/>
+    <circle cx="400" cy="200" r="120" stroke="#3ECF8E" stroke-width="0.5" opacity="0.3" fill="none"/>
+    <circle cx="400" cy="200" r="90" stroke="#3ECF8E" stroke-width="0.5" opacity="0.2" fill="none"/>
+    <circle cx="400" cy="200" r="60" stroke="#3ECF8E" stroke-width="0.5" opacity="0.3" fill="none"/>
+    
+    <!-- Main project structure root -->
+    <g transform="translate(400, 200)" filter="url(#glow)">
+        <circle r="30" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="5" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="12">frontend</text>
+    </g>
+    
+    <!-- First level directories (src, scripts, public) -->
+    <g transform="translate(400, 90)" filter="url(#glow)">
+        <circle r="25" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="5" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="10">📱 src</text>
+    </g>
+    
+    <g transform="translate(250, 200)" filter="url(#glow)">
+        <circle r="20" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="5" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="10">📜 scripts</text>
+    </g>
+    
+    <g transform="translate(550, 200)" filter="url(#glow)">
+        <circle r="20" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="5" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="10">🖼️ public</text>
+    </g>
+    
+    <g transform="translate(400, 310)" filter="url(#glow)">
+        <circle r="20" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="5" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="10">📊 supabase</text>
+    </g>
+    
+    <!-- Connection lines -->
+    <line x1="400" y1="170" x2="400" y2="115" stroke="url(#folderGradient)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="400" y1="230" x2="400" y2="290" stroke="url(#folderGradient)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="370" y1="200" x2="270" y2="200" stroke="url(#folderGradient)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="430" y1="200" x2="530" y2="200" stroke="url(#folderGradient)" stroke-width="1.5" opacity="0.7"/>
+    
+    <!-- Src subdirectories -->
+    <g transform="translate(330, 35)" filter="url(#glow)">
+        <circle r="15" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="4" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">🧩 app</text>
+    </g>
+
+    <g transform="translate(400, 35)" filter="url(#glow)">
+        <circle r="15" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="4" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">🧱 components</text>
+    </g>
+
+    <g transform="translate(470, 35)" filter="url(#glow)">
+        <circle r="15" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="4" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">📚 lib</text>
+    </g>
+
+    <g transform="translate(535, 35)" filter="url(#glow)">
+        <circle r="15" fill="url(#folderGradient)" />
+        <text text-anchor="middle" dy="4" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">🛠️ utils</text>
+    </g>
+
+    <!-- Connect src to subdirectories -->
+    <line x1="400" y1="65" x2="330" y2="35" stroke="url(#folderGradient)" stroke-width="1" opacity="0.7"/>
+    <line x1="400" y1="65" x2="400" y2="35" stroke="url(#folderGradient)" stroke-width="1" opacity="0.7"/>
+    <line x1="400" y1="65" x2="470" y2="35" stroke="url(#folderGradient)" stroke-width="1" opacity="0.7"/>
+    <line x1="400" y1="65" x2="535" y2="35" stroke="url(#folderGradient)" stroke-width="1" opacity="0.7"/>
+    
+    <!-- Required config files -->
+    <g transform="translate(600, 140)" filter="url(#glow)">
+        <rect width="30" height="35" rx="3" fill="url(#fileGradient)" opacity="0.8" />
+        <text x="15" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">.env</text>
+    </g>
+
+    <g transform="translate(600, 260)" filter="url(#glow)">
+        <rect width="30" height="35" rx="3" fill="url(#fileGradient)" opacity="0.8" />
+        <text x="15" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">next.config</text>
+    </g>
+
+    <g transform="translate(200, 140)" filter="url(#glow)">
+        <rect width="30" height="35" rx="3" fill="url(#fileGradient)" opacity="0.8" />
+        <text x="15" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">package</text>
+    </g>
+
+    <g transform="translate(200, 260)" filter="url(#glow)">
+        <rect width="30" height="35" rx="3" fill="url(#fileGradient)" opacity="0.8" />
+        <text x="15" y="22" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">tsconfig</text>
+    </g>
+    
+    <!-- Connect to files -->
+    <line x1="550" y1="190" x2="590" y2="150" stroke="#4285F4" stroke-width="1" opacity="0.7"/>
+    <line x1="550" y1="210" x2="590" y2="250" stroke="#4285F4" stroke-width="1" opacity="0.7"/>
+    <line x1="250" y1="190" x2="210" y2="150" stroke="#4285F4" stroke-width="1" opacity="0.7"/>
+    <line x1="250" y1="210" x2="210" y2="250" stroke="#4285F4" stroke-width="1" opacity="0.7"/>
+    
+    <!-- Central rotating gear -->
+    <g class="rotating" transform="translate(400,200)">
+        <path d="M0,-15 L5,-5 L15,-5 L15,5 L5,5 L0,15 L-5,5 L-15,5 L-15,-5 L-5,-5 Z" 
+              fill="none" stroke="#7B68EE" stroke-width="1" opacity="0.6"/>
+    </g>
+    
+    <!-- Title and Legend -->
+    <text x="400" y="375" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="16">MCP Space Frontend Project Structure</text>
+    
+    <rect x="30" y="350" width="15" height="15" rx="7.5" fill="url(#folderGradient)" />
+    <text x="55" y="362" fill="#FFFFFF" font-family="Arial" font-size="10">Directory</text>
+    
+    <rect x="120" y="350" width="15" height="15" rx="2" fill="url(#fileGradient)" />
+    <text x="145" y="362" fill="#FFFFFF" font-family="Arial" font-size="10">File</text>
+</svg>

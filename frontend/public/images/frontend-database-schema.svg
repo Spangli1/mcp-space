@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="350px" viewBox="0 0 800 350" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#000022" />
+            <stop offset="100%" stop-color="#220033" />
+        </linearGradient>
+        <linearGradient id="tableGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3ECF8E" />
+            <stop offset="100%" stop-color="#2E9D6C" />
+        </linearGradient>
+        <linearGradient id="tableGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#2B73D2" />
+        </linearGradient>
+        <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3ECF8E" />
+            <stop offset="100%" stop-color="#4285F4" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+        <!-- Animation definitions -->
+        <style>
+            @keyframes pulse {
+                0% { opacity: 0.4; }
+                50% { opacity: 0.8; }
+                100% { opacity: 0.4; }
+            }
+            .pulsing {
+                animation: pulse 3s infinite ease-in-out;
+            }
+            @keyframes dataflow {
+                0% { stroke-dashoffset: 30; }
+                100% { stroke-dashoffset: 0; }
+            }
+            .flowing {
+                stroke-dasharray: 6 3;
+                animation: dataflow 2s linear infinite;
+            }
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-3px); }
+            }
+            .floating {
+                animation: float 3s ease-in-out infinite;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="800" height="350" fill="url(#bgGradient)"/>
+    
+    <!-- Stars -->
+    <g class="pulsing">
+        <circle cx="50" cy="30" r="1" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="120" cy="50" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="200" cy="25" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="280" cy="15" r="1" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="350" cy="40" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="430" cy="20" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="500" cy="35" r="1" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="550" cy="25" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="620" cy="15" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="690" cy="45" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="750" cy="30" r="1" fill="#FFFFFF" opacity="0.7" />
+    </g>
+    
+    <!-- Database tables -->
+    
+    <!-- MCP Server Table -->
+    <g transform="translate(200, 170)" filter="url(#glow)">
+        <g class="floating">
+            <!-- Table outline -->
+            <rect x="-150" y="-100" width="300" height="200" rx="10" fill="#000033" stroke="url(#tableGradient1)" stroke-width="2"/>
+            
+            <!-- Header -->
+            <rect x="-150" y="-100" width="300" height="30" rx="10" fill="url(#tableGradient1)" opacity="0.9"/>
+            <text x="0" y="-80" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="14">🔧 mcp_server</text>
+            
+            <!-- Column headers -->
+            <rect x="-140" y="-60" width="100" height="20" rx="5" fill="#2E9D6C" opacity="0.8"/>
+            <text x="-90" y="-45" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10">Column</text>
+            
+            <rect x="-30" y="-60" width="60" height="20" rx="5" fill="#2E9D6C" opacity="0.8"/>
+            <text x="0" y="-45" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10">Type</text>
+            
+            <rect x="40" y="-60" width="100" height="20" rx="5" fill="#2E9D6C" opacity="0.8"/>
+            <text x="90" y="-45" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10">Description</text>
+            
+            <!-- Column data -->
+            <text x="-90" y="-25" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">server_id 🔑</text>
+            <text x="0" y="-25" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">uuid</text>
+            <text x="90" y="-25" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Primary key</text>
+            
+            <text x="-90" y="-5" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">server_name</text>
+            <text x="0" y="-5" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">text</text>
+            <text x="90" y="-5" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Server name</text>
+            
+            <text x="-90" y="15" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">state</text>
+            <text x="0" y="15" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">jsonb</text>
+            <text x="90" y="15" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Server config</text>
+            
+            <text x="-90" y="35" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">user_id</text>
+            <text x="0" y="35" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">uuid</text>
+            <text x="90" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Creator ID</text>
+            
+            <text x="-90" y="55" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">env_json</text>
+            <text x="0" y="55" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">jsonb</text>
+            <text x="90" y="55" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Env variables</text>
+            
+            <text x="-90" y="75" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">...</text>
+            <text x="0" y="75" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">...</text>
+            <text x="90" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">...</text>
+        </g>
+    </g>
+    
+    <!-- Deployment Status Table -->
+    <g transform="translate(600, 170)" filter="url(#glow)">
+        <g class="floating">
+            <!-- Table outline -->
+            <rect x="-150" y="-100" width="300" height="200" rx="10" fill="#000033" stroke="url(#tableGradient2)" stroke-width="2"/>
+            
+            <!-- Header -->
+            <rect x="-150" y="-100" width="300" height="30" rx="10" fill="url(#tableGradient2)" opacity="0.9"/>
+            <text x="0" y="-80" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="14">🚀 deployment_status</text>
+            
+            <!-- Column headers -->
+            <rect x="-140" y="-60" width="100" height="20" rx="5" fill="#2B73D2" opacity="0.8"/>
+            <text x="-90" y="-45" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10">Column</text>
+            
+            <rect x="-30" y="-60" width="60" height="20" rx="5" fill="#2B73D2" opacity="0.8"/>
+            <text x="0" y="-45" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10">Type</text>
+            
+            <rect x="40" y="-60" width="100" height="20" rx="5" fill="#2B73D2" opacity="0.8"/>
+            <text x="90" y="-45" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="10">Description</text>
+            
+            <!-- Column data -->
+            <text x="-90" y="-25" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">id 🔑</text>
+            <text x="0" y="-25" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">text</text>
+            <text x="90" y="-25" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Primary key</text>
+            
+            <text x="-90" y="-5" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">status</text>
+            <text x="0" y="-5" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">text</text>
+            <text x="90" y="-5" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Deploy status</text>
+            
+            <text x="-90" y="15" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">url</text>
+            <text x="0" y="15" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">text</text>
+            <text x="90" y="15" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Server URL</text>
+            
+            <text x="-90" y="35" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">server_id</text>
+            <text x="0" y="35" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">text</text>
+            <text x="90" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">FK to server</text>
+            
+            <text x="-90" y="55" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">log</text>
+            <text x="0" y="55" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">text</text>
+            <text x="90" y="55" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">Deploy logs</text>
+            
+            <text x="-90" y="75" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">...</text>
+            <text x="0" y="75" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">...</text>
+            <text x="90" y="75" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="9">...</text>
+        </g>
+    </g>
+    
+    <!-- Relationship between tables -->
+    <g filter="url(#glow)">
+        <path d="M350,170 C400,170 400,170 450,170" fill="none" stroke="url(#connectionGradient)" stroke-width="2" class="flowing" />
+        <polygon points="450,170 440,165 440,175" fill="#4285F4" />
+        <text x="400" y="155" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="12">1:N</text>
+    </g>
+    
+    <!-- Database icon -->
+    <g transform="translate(400, 60)" filter="url(#glow)">
+        <path d="M-30,0 C-30,-15 30,-15 30,0 L30,10 C30,25 -30,25 -30,10 Z" fill="url(#connectionGradient)" />
+        <path d="M-30,10 C-30,-5 30,-5 30,10" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5" />
+        <path d="M-30,0 C-30,-15 30,-15 30,0" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5" />
+        <text x="0" y="40" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="14">PostgreSQL Database</text>
+        
+        <!-- Connections to tables -->
+        <path d="M-20,10 C-20,60 -100,90 -160,90" fill="none" stroke="#3ECF8E" stroke-width="2" class="flowing" />
+        <polygon points="-160,90 -150,85 -150,95" fill="#3ECF8E" />
+        
+        <path d="M20,10 C20,60 100,90 160,90" fill="none" stroke="#4285F4" stroke-width="2" class="flowing" />
+        <polygon points="160,90 150,85 150,95" fill="#4285F4" />
+    </g>
+    
+    <!-- Title -->
+    <text x="400" y="325" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="18">MCP Space Database Schema</text>
+</svg>

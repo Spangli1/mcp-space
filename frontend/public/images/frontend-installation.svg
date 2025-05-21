@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="220px" viewBox="0 0 800 220" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#000022" />
+            <stop offset="100%" stop-color="#220033" />
+        </linearGradient>
+        <linearGradient id="actionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#7B68EE" />
+        </linearGradient>
+        <linearGradient id="terminalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#000000" />
+            <stop offset="100%" stop-color="#222222" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+        <!-- Animation definitions -->
+        <style>
+            @keyframes pulse {
+                0% { opacity: 0.4; }
+                50% { opacity: 0.8; }
+                100% { opacity: 0.4; }
+            }
+            .pulsing {
+                animation: pulse 3s infinite ease-in-out;
+            }
+            @keyframes type {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+            .typing {
+                animation: type 3s steps(30, end) forwards;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-5px); }
+            }
+            .floating {
+                animation: float 3s ease-in-out infinite;
+            }
+            @keyframes spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            .spinning {
+                animation: spin 8s linear infinite;
+                transform-origin: center;
+            }
+        </style>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="800" height="220" fill="url(#bgGradient)"/>
+    
+    <!-- Stars -->
+    <g class="pulsing">
+        <circle cx="50" cy="30" r="1" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="120" cy="50" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="200" cy="25" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="280" cy="15" r="1" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="350" cy="40" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="430" cy="20" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="500" cy="35" r="1" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="550" cy="25" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="620" cy="15" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="690" cy="45" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="750" cy="30" r="1" fill="#FFFFFF" opacity="0.7" />
+    </g>
+    
+    <!-- Steps area with terminals -->
+    
+    <!-- Step 1: Clone -->
+    <g transform="translate(100, 100)" filter="url(#glow)">
+        <rect x="-80" y="-40" width="160" height="80" rx="10" fill="url(#terminalGradient)" stroke="#4285F4" stroke-width="2"/>
+        <text x="-70" y="-20" font-family="monospace" fill="#4285F4" font-size="12">~ $</text>
+        <text x="-40" y="-20" font-family="monospace" fill="#FFFFFF" font-size="12" class="typing">git clone mcp-space</text>
+        <text x="-70" y="0" font-family="monospace" fill="#4285F4" font-size="12">~ $</text>
+        <text x="-40" y="0" font-family="monospace" fill="#FFFFFF" font-size="12" class="typing">cd mcp-space/frontend</text>
+        <text x="-70" y="20" font-family="monospace" fill="#3ECF8E" font-size="12">✓ Repository cloned</text>
+        <circle cx="0" cy="50" r="15" fill="#4285F4" opacity="0.8" />
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" fill="#FFFFFF" font-weight="bold" font-size="16">1</text>
+    </g>
+    
+    <!-- Arrow -->
+    <line x1="180" y1="100" x2="220" y2="100" stroke="url(#actionGradient)" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="220,100 214,96 214,104" fill="#4285F4"/>
+    
+    <!-- Step 2: Install -->
+    <g transform="translate(300, 100)" filter="url(#glow)">
+        <rect x="-80" y="-40" width="160" height="80" rx="10" fill="url(#terminalGradient)" stroke="#3ECF8E" stroke-width="2"/>
+        <text x="-70" y="-20" font-family="monospace" fill="#3ECF8E" font-size="12">frontend $</text>
+        <text x="-10" y="-20" font-family="monospace" fill="#FFFFFF" font-size="12" class="typing">npm install</text>
+        <text x="-70" y="20" font-family="monospace" fill="#3ECF8E" font-size="12">✓ Dependencies installed</text>
+        <circle cx="0" cy="50" r="15" fill="#3ECF8E" opacity="0.8" />
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" fill="#FFFFFF" font-weight="bold" font-size="16">2</text>
+        
+        <!-- Spinning packages -->
+        <g class="spinning" transform="translate(30, 0)">
+            <rect x="-10" y="-10" width="20" height="20" fill="#7B68EE" opacity="0.5" />
+            <text x="0" y="5" text-anchor="middle" font-family="monospace" fill="#FFFFFF" font-size="16">📦</text>
+        </g>
+    </g>
+    
+    <!-- Arrow -->
+    <line x1="380" y1="100" x2="420" y2="100" stroke="url(#actionGradient)" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="420,100 414,96 414,104" fill="#4285F4"/>
+    
+    <!-- Step 3: Environment -->
+    <g transform="translate(500, 100)" filter="url(#glow)">
+        <rect x="-80" y="-40" width="160" height="80" rx="10" fill="url(#terminalGradient)" stroke="#7B68EE" stroke-width="2"/>
+        <text x="-70" y="-20" font-family="monospace" fill="#7B68EE" font-size="12">frontend $</text>
+        <text x="-10" y="-20" font-family="monospace" fill="#FFFFFF" font-size="12" class="typing">cp .env.example .env</text>
+        <text x="-70" y="20" font-family="monospace" fill="#7B68EE" font-size="12">✓ Environment configured</text>
+        <circle cx="0" cy="50" r="15" fill="#7B68EE" opacity="0.8" />
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" fill="#FFFFFF" font-weight="bold" font-size="16">3</text>
+        
+        <!-- Floating keys -->
+        <g class="floating" transform="translate(30, 0)">
+            <text x="0" y="0" text-anchor="middle" font-family="monospace" fill="#FFFFFF" font-size="16">🔑</text>
+        </g>
+    </g>
+    
+    <!-- Arrow -->
+    <line x1="580" y1="100" x2="620" y2="100" stroke="url(#actionGradient)" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="620,100 614,96 614,104" fill="#4285F4"/>
+    
+    <!-- Step 4: Start -->
+    <g transform="translate(700, 100)" filter="url(#glow)">
+        <rect x="-80" y="-40" width="160" height="80" rx="10" fill="url(#terminalGradient)" stroke="#EA4335" stroke-width="2"/>
+        <text x="-70" y="-20" font-family="monospace" fill="#EA4335" font-size="12">frontend $</text>
+        <text x="-10" y="-20" font-family="monospace" fill="#FFFFFF" font-size="12" class="typing">npm run dev</text>
+        <text x="-70" y="20" font-family="monospace" fill="#EA4335" font-size="12">✓ Server running at :3000</text>
+        <circle cx="0" cy="50" r="15" fill="#EA4335" opacity="0.8" />
+        <text x="0" y="55" text-anchor="middle" font-family="Arial" fill="#FFFFFF" font-weight="bold" font-size="16">4</text>
+        
+        <!-- Floating rocket -->
+        <g class="floating" transform="translate(30, 0)">
+            <text x="0" y="0" text-anchor="middle" font-family="monospace" fill="#FFFFFF" font-size="16">🚀</text>
+        </g>
+    </g>
+    
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="20">MCP Space Frontend Installation</text>
+    <text x="400" y="190" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14">Ready to start building the next generation of AI tools!</text>
+</svg>

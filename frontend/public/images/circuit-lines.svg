@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="circuitPattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Horizontal lines -->
+      <path d="M0,25 L40,25 L45,20 L65,20 L70,25 L100,25" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      <path d="M0,75 L25,75 L30,70 L70,70 L75,75 L100,75" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      
+      <!-- Vertical lines -->
+      <path d="M25,0 L25,40 L30,45 L30,65 L25,70 L25,100" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      <path d="M75,0 L75,25 L70,30 L70,70 L75,75 L75,100" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      
+      <!-- Connection points -->
+      <circle cx="25" cy="25" r="2" fill="#38bdf8" opacity="0.5"/>
+      <circle cx="75" cy="25" r="2" fill="#38bdf8" opacity="0.5"/>
+      <circle cx="25" cy="75" r="2" fill="#38bdf8" opacity="0.5"/>
+      <circle cx="75" cy="75" r="2" fill="#38bdf8" opacity="0.5"/>
+      
+      <!-- Additional circuit elements -->
+      <path d="M50,25 L50,75" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="45" y="45" width="10" height="10" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      
+      <path d="M25,50 L75,50" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      <circle cx="50" cy="50" r="3" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      
+      <!-- Angular connections -->
+      <path d="M15,15 L25,25" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      <path d="M85,15 L75,25" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      <path d="M15,85 L25,75" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+      <path d="M85,85 L75,75" fill="none" stroke="#38bdf8" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#circuitPattern)"/>
+</svg>

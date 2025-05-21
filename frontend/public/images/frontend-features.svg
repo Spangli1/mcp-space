@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="220px" viewBox="0 0 800 220" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#000022" />
+            <stop offset="100%" stop-color="#220033" />
+        </linearGradient>
+        <linearGradient id="featureGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#EA4335" />
+            <stop offset="100%" stop-color="#FBBC05" />
+        </linearGradient>
+        <linearGradient id="featureGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4285F4" />
+            <stop offset="100%" stop-color="#3ECF8E" />
+        </linearGradient>
+        <linearGradient id="chatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3ECF8E" />
+            <stop offset="100%" stop-color="#4285F4" />
+        </linearGradient>
+        <linearGradient id="deployGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FBBC05" />
+            <stop offset="100%" stop-color="#EA4335" />
+        </linearGradient>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background -->
+        <rect width="800" height="220" fill="url(#bgGradient)"/>
+        
+        <!-- Stars -->
+        <circle cx="50" cy="30" r="1" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="120" cy="50" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="200" cy="25" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="280" cy="15" r="1" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="350" cy="40" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="430" cy="20" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="500" cy="30" r="1.2" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="570" cy="40" r="0.8" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="650" cy="15" r="1.3" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="720" cy="30" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="750" cy="60" r="1.5" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="100" cy="70" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="180" cy="200" r="1.2" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="300" cy="190" r="0.8" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="450" cy="210" r="1.3" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="620" cy="200" r="1" fill="#FFFFFF" opacity="0.6" />
+        <circle cx="700" cy="180" r="0.7" fill="#FFFFFF" opacity="0.8" />
+        
+        <!-- Title -->
+        <text x="400" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Key Features</text>
+        
+        <!-- Feature 1: Interactive Chat -->
+        <g transform="translate(50, 50)">
+            <rect x="0" y="0" width="160" height="70" rx="8" fill="url(#chatGradient)" opacity="0.8" />
+            <circle cx="35" cy="35" r="20" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="35" y="42" font-family="Arial" font-size="20" fill="white" text-anchor="middle">💬</text>
+            <text x="115" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Interactive Chat</text>
+            <text x="115" y="50" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Build MCP servers by chatting</text>
+            <text x="115" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">with our Gemini assistant</text>
+        </g>
+        
+        <!-- Feature 2: Tool Management -->
+        <g transform="translate(230, 50)">
+            <rect x="0" y="0" width="160" height="70" rx="8" fill="url(#featureGradient1)" opacity="0.8" />
+            <circle cx="35" cy="35" r="20" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="35" y="42" font-family="Arial" font-size="20" fill="white" text-anchor="middle">🛠️</text>
+            <text x="115" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Visual Tool Management</text>
+            <text x="115" y="50" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Configure MCP tools with</text>
+            <text x="115" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">an intuitive UI</text>
+        </g>
+        
+        <!-- Feature 3: Environment Management -->
+        <g transform="translate(410, 50)">
+            <rect x="0" y="0" width="160" height="70" rx="8" fill="url(#featureGradient2)" opacity="0.8" />
+            <circle cx="35" cy="35" r="20" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="35" y="42" font-family="Arial" font-size="20" fill="white" text-anchor="middle">🔑</text>
+            <text x="115" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Environment Management</text>
+            <text x="115" y="50" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Easily manage API keys</text>
+            <text x="115" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">and environment variables</text>
+        </g>
+        
+        <!-- Feature 4: One-Click Deployment -->
+        <g transform="translate(590, 50)">
+            <rect x="0" y="0" width="160" height="70" rx="8" fill="url(#deployGradient)" opacity="0.8" />
+            <circle cx="35" cy="35" r="20" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="35" y="42" font-family="Arial" font-size="20" fill="white" text-anchor="middle">🚀</text>
+            <text x="115" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">One-Click Deployment</text>
+            <text x="115" y="50" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Deploy to Cloudflare Workers</text>
+            <text x="115" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">with a single click</text>
+        </g>
+        
+        <!-- Feature 5: Persistent Deployments -->
+        <g transform="translate(140, 130)">
+            <rect x="0" y="0" width="160" height="70" rx="8" fill="url(#chatGradient)" opacity="0.8" />
+            <circle cx="35" cy="35" r="20" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="35" y="42" font-family="Arial" font-size="20" fill="white" text-anchor="middle">💾</text>
+            <text x="115" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Persistent Deployments</text>
+            <text x="115" y="50" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Deployment data stored in</text>
+            <text x="115" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Supabase PostgreSQL</text>
+        </g>
+        
+        <!-- Feature 6: Modern UI -->
+        <g transform="translate(320, 130)">
+            <rect x="0" y="0" width="160" height="70" rx="8" fill="url(#featureGradient1)" opacity="0.8" />
+            <circle cx="35" cy="35" r="20" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="35" y="42" font-family="Arial" font-size="20" fill="white" text-anchor="middle">✨</text>
+            <text x="115" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Modern UI</text>
+            <text x="115" y="50" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Beautiful space-themed interface</text>
+            <text x="115" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">with responsive design</text>
+        </g>
+        
+        <!-- Feature 7: Real-time Updates -->
+        <g transform="translate(500, 130)">
+            <rect x="0" y="0" width="160" height="70" rx="8" fill="url(#featureGradient2)" opacity="0.8" />
+            <circle cx="35" cy="35" r="20" fill="#FFFFFF" opacity="0.2" filter="url(#glow)" />
+            <text x="35" y="42" font-family="Arial" font-size="20" fill="white" text-anchor="middle">⚡</text>
+            <text x="115" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Real-time Updates</text>
+            <text x="115" y="50" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Instant feedback on server status</text>
+            <text x="115" y="65" font-family="Arial" font-size="10" fill="white" text-anchor="middle">and tool configurations</text>
+        </g>
+        
+        <!-- Connecting lines -->
+        <path d="M130,120 L160,130" stroke="url(#chatGradient)" stroke-width="1.5" stroke-dasharray="4,2"/>
+        <path d="M310,120 L340,130" stroke="url(#featureGradient1)" stroke-width="1.5" stroke-dasharray="4,2"/>
+        <path d="M490,120 L520,130" stroke="url(#featureGradient2)" stroke-width="1.5" stroke-dasharray="4,2"/>
+        <path d="M670,120 L640,165" stroke="url(#deployGradient)" stroke-width="1.5" stroke-dasharray="4,2"/>
+    </g>
+</svg>
