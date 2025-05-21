@@ -14,6 +14,10 @@
     <a href="https://supabase.com/" target="_blank"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase"/></a>
   </p>
   
+  <p>
+    <a href="../README.md">← Back to Main Project</a> | <a href="../frontend/README.md">Frontend Documentation →</a>
+  </p>
+  
   <!-- <img src="../frontend/public/images/satellite.svg" alt="Satellite" width="80"/> -->
 </div>
 
@@ -113,6 +117,19 @@ google-adk/
 ```
 
 
+</div>
+
+## 📸 Sample Screenshots
+
+<div align="center">
+  <h3>Agent Workflow in Action</h3>
+  <p>View more screenshots in the <a href="../README.md#-sample-screenshots">main project README</a></p>
+  
+  <h3>Information Collection</h3>
+  <img src="../public/samples/specification.png" alt="Information Collection" width="80%"/>
+  
+  <h3>Code Generation</h3>
+  <img src="../public/samples/files.png" alt="Code Generation" width="80%"/>
 </div>
 
 ## ⚙️ Technical Requirements

@@ -424,7 +424,7 @@ def after_model_callback(callback_context: CallbackContext, llm_response: LlmRes
     # Get response text from the LLM
     response_text = llm_response.content.parts[0].text
     print(f"Response from LLM: {response_text}")
-    input("Press Enter to continue...")  # For debugging purposes
+    # input("Press Enter to continue...")  # For debugging purposes
 
     # Initialize variables
     specification_json = None
@@ -495,7 +495,7 @@ def after_model_callback(callback_context: CallbackContext, llm_response: LlmRes
         specification_json = extract_json_from_codeblock(response_text)
 
         print("specification_json: ", specification_json)
-        input("Press Enter to continue...")  # For debugging purposes
+        # input("Press Enter to continue...")  # For debugging purposes
 
         # Extract the specification summary text
         # specification_summary = extract_specification_summary(response_text)
@@ -581,7 +581,7 @@ def after_model_callback(callback_context: CallbackContext, llm_response: LlmRes
 
         print("\n\n\nUser response after model callback:")
         print(user_response)
-        input("Press Enter to continue...")  # For debugging purposes
+        # input("Press Enter to continue...")  # For debugging purposes
 
     except Exception as e:
         # Log the error for debugging

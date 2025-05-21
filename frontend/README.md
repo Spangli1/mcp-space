@@ -11,7 +11,10 @@
     <a href="https://supabase.com/" target="_blank"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase"/></a>
     <a href="https://www.postgresql.org/" target="_blank"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/></a>
     <a href="https://www.cloudflare.com/" target="_blank"><img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare"/></a>
-
+  </p>
+  
+  <p>
+    <a href="../README.md">← Back to Main Project</a> | <a href="../google-adk/README.md">Google ADK Documentation →</a>
   </p>
 </div>
 
@@ -123,6 +126,25 @@ MCP Space is a no-code platform for building and deploying Model Context Protoco
     </tr>
   </table>
 </div>
+
+## 📸 Sample Screenshots
+
+<div align="center">
+  <h3>View more screenshots in the <a href="../README.md#-sample-screenshots">main project README</a></h3>
+  
+  <h3>User Interface</h3>
+  <img src="../public/samples/tools.png" alt="User Interface" width="80%"/>
+  
+  <h3>Deployment Process</h3>
+  <div style="display: flex; justify-content: space-between;">
+    <img src="../public/samples/deploying.png" alt="Deployment Process" width="49%"/>
+    <img src="../public/samples/deployment-1.png" alt="Successful Deployment" width="49%"/>
+  </div>
+</div>
+
+## 🎬 Demo
+
+Check out the full demo video in the [main project README](../README.md#-demo-video).
 
 ## 🚀 Getting Started
 <!-- 

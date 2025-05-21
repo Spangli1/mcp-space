@@ -126,6 +126,49 @@ google-adk/
 └── 🖼️ public/                # Static assets and images
 ```
 
+## 📸 Sample Screenshots
+
+<div align="center">
+  <h3>Specification Builder</h3>
+  <img src="./public/samples/specification.png" alt="MCP Space Specification Builder" width="80%"/>
+  
+  <h3>MCP Tools Configuration</h3>
+  <img src="./public/samples/tools.png" alt="MCP Tools Configuration" width="80%"/>
+  
+  <h3>Generated Files</h3>
+  <img src="./public/samples/files.png" alt="Generated Files" width="80%"/>
+  
+  <h3>Deployment in Progress</h3>
+  <img src="./public/samples/deploying.png" alt="Deployment in Progress" width="80%"/>
+  
+  <h3>Successful Deployment</h3>
+  <div style="display: flex; justify-content: space-between;">
+    <img src="./public/samples/deployment-1.png" alt="Deployment Stage 1" width="49%"/>
+    <img src="./public/samples/deployment-2.png" alt="Deployment Stage 2" width="49%"/>
+  </div>
+  
+  <h3>Integration with LLMs</h3>
+  <img src="./public/samples/integration.png" alt="MCP Integration" width="80%"/>
+  
+  <h3>Output Examples</h3>
+  <div style="display: flex; justify-content: space-between;">
+    <img src="./public/samples/output-1.png" alt="Output Example 1" width="49%"/>
+    <img src="./public/samples/output-2.png" alt="Output Example 2" width="49%"/>
+  </div>
+</div>
+
+## 🎬 Demo Video
+
+<div align="center">
+  <p>
+    <a href="./public/samples/MCP-SPACE Demo - Made with Clipchamp.mp4" target="_blank">
+      <img src="./public/samples/deployment-1.png" alt="Click to Watch Demo Video" width="80%" />
+      <br />
+      <strong>👆 Click to Watch Demo Video</strong>
+    </a>
+  </p>
+</div>
+
 ## 🚀 Getting Started
 
 ### Prerequisites

@@ -241,11 +241,11 @@ def get_spec_by_query(query: str, user_id: Optional[str] = None, server_id: Opti
             # Parse the JSON if it's a string
             spec_json = item['spec_json']
             print("\n\nspec_json : ", spec_json)
-            input("\nspec_json\nPress Enter to continue...")
+            # input("\nspec_json\nPress Enter to continue...")
 
             semantic_result = compare_query_json(query, spec_json)
             print("MySemilarty score: ", semantic_result)
-            input("\nsimilarty score \nPress Enter to continue...")
+            # input("\nsimilarty score \nPress Enter to continue...")
             semantic_score = semantic_result.get("similarity_score", 0.5)
 
             # Debug logging
@@ -380,7 +380,7 @@ def save_specification(user_id: str, spec_json: Optional[Dict[str, Any]], server
         Optional[str]: The ID of the specification (existing or newly created) if successful, None otherwise.
     """
     print("\n\n\nsaving specifications : ", spec_json)
-    input("\n\nsave specification\nPress Enter to continue...")
+    # input("\n\nsave specification\nPress Enter to continue...")
     try:
         # Check if a similar specification already exists
         existing_spec_id = None
@@ -402,11 +402,11 @@ def save_specification(user_id: str, spec_json: Optional[Dict[str, Any]], server
                     f"Checking for existing specification matching: '{query}'")
                 existing_spec = get_spec_by_query(query, user_id, server_id)
                 print(f"Existing specification found: {existing_spec}")
-                input("checking for existing specification\nPress Enter to continue...")
+                # input("checking for existing specification\nPress Enter to continue...")
                 if existing_spec:
                     print(
                         f"Found existing specification with ID: {existing_spec.get('spec_id')}")
-                    input("found existing: \nPress Enter to continue...")
+                    # input("found existing: \nPress Enter to continue...")
                     existing_spec_id = existing_spec.get('spec_id')
                     return existing_spec_id
 
@@ -425,13 +425,13 @@ def save_specification(user_id: str, spec_json: Optional[Dict[str, Any]], server
                 data["server_id"] = server_id
 
             print("\n\n\save specification data : ", data)
-            input("\nsave specification data\nPress Enter to continue...")
+            # input("\nsave specification data\nPress Enter to continue...")
 
             response = supabase.table("spec").insert(data).execute()
 
             print("\n\n\nresponse : ", response)
 
-            input("\nsave specification response\nPress Enter to continue...")
+            # input("\nsave specification response\nPress Enter to continue...")
 
             if response.data and len(response.data) > 0:
                 return response.data[0].get("spec_id")

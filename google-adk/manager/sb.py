@@ -22,4 +22,3 @@ host = os.getenv("DB_HOST")
 db_url = f"postgresql+psycopg2://{username}:{password}@{dbname}:{port}/{host}"
 
 
-# adk web --session_db_url="postgresql+psycopg2://postgres.nmsyjochvvtgtwmbgewn:Tharuneshwar#18@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres" --allow_origins="*"
