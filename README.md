@@ -129,13 +129,9 @@ google-adk/
 ## 🎬 Demo Video
 
 <div align="center">
-  <p>
-    <a href="./public/samples/MCP-SPACE Demo - Made with Clipchamp.mp4" target="_blank">
-      <img src="./public/samples/deployment-1.png" alt="Click to Watch Demo Video" width="80%" />
-      <br />
-      <strong>👆 Click to Watch Demo Video</strong>
-    </a>
-  </p>
+
+https://github.com/user-attachments/assets/efa11737-023b-42d1-916b-8b9cc592420f
+
 </div>
 
 
