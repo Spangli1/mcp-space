@@ -4,6 +4,7 @@
   <img src="public/logo.png" alt="MCP Space Logo" width="200"/>
   
   <p>
+    <a href="https://github.com/tharuneshwar-s/mcp-space" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/></a>
     <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Built%20with-Next.js%2014%2B-black?style=for-the-badge&logo=next.js" alt="Built with Next.js"/></a>
     <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/Typescript-blue?style=for-the-badge&logo=typescript" alt="TypeScript"/></a>
     <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/></a>
@@ -162,7 +163,7 @@ Check out the full demo video in the [main project README](../README.md#-demo-vi
 1️⃣ **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/mcp-space.git
+git clone https://github.com/tharuneshwar-s/mcp-space.git
 cd mcp-space/frontend
 ```
 

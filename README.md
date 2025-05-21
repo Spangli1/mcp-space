@@ -5,7 +5,7 @@
   
   <h2>No-Code AI Tool Builder with Model Context Protocol</h2>
   
-  <p>
+  <p>    <a href="https://github.com/tharuneshwar-s/mcp-space" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/></a>
     <a href="https://mcp.sh/" target="_blank"><img src="https://img.shields.io/badge/Model_Context_Protocol-7C4DFF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci16YXAiPjxwb2x5Z29uIHBvaW50cz0iMTMgMiAzIDE0IDEyIDE0IDE1IDIyIDIyIDEwIDEwIDEwIj48L3BvbHlnb24+PC9zdmc+" alt="Model Context Protocol"/></a>
     <a href="https://ai.google.dev/docs/agents_api" target="_blank"><img src="https://img.shields.io/badge/Google_ADK-EA4335?style=for-the-badge&logo=google&logoColor=white" alt="Google ADK"/></a>
     <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js_14+-000000?style=for-the-badge&logo=next.js" alt="Next.js"/></a>
@@ -126,37 +126,6 @@ google-adk/
 └── 🖼️ public/                # Static assets and images
 ```
 
-## 📸 Sample Screenshots
-
-<div align="center">
-  <h3>Specification Builder</h3>
-  <img src="./public/samples/specification.png" alt="MCP Space Specification Builder" width="80%"/>
-  
-  <h3>MCP Tools Configuration</h3>
-  <img src="./public/samples/tools.png" alt="MCP Tools Configuration" width="80%"/>
-  
-  <h3>Generated Files</h3>
-  <img src="./public/samples/files.png" alt="Generated Files" width="80%"/>
-  
-  <h3>Deployment in Progress</h3>
-  <img src="./public/samples/deploying.png" alt="Deployment in Progress" width="80%"/>
-  
-  <h3>Successful Deployment</h3>
-  <div style="display: flex; justify-content: space-between;">
-    <img src="./public/samples/deployment-1.png" alt="Deployment Stage 1" width="49%"/>
-    <img src="./public/samples/deployment-2.png" alt="Deployment Stage 2" width="49%"/>
-  </div>
-  
-  <h3>Integration with LLMs</h3>
-  <img src="./public/samples/integration.png" alt="MCP Integration" width="80%"/>
-  
-  <h3>Output Examples</h3>
-  <div style="display: flex; justify-content: space-between;">
-    <img src="./public/samples/output-1.png" alt="Output Example 1" width="49%"/>
-    <img src="./public/samples/output-2.png" alt="Output Example 2" width="49%"/>
-  </div>
-</div>
-
 ## 🎬 Demo Video
 
 <div align="center">
@@ -182,7 +151,7 @@ google-adk/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mcp-space.git
+git clone https://github.com/tharuneshwar-s/mcp-space.git
 cd mcp-space/frontend
 
 # Install dependencies

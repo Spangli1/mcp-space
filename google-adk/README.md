@@ -6,8 +6,8 @@
   <img src="../frontend/public/logo.png" alt="MCP Space Logo" width="200"/>
   
   <h3>🌌 Intelligent AI Agent Orchestration 🌌</h3>
-  
-  <p>
+    <p>
+    <a href="https://github.com/tharuneshwar-s/mcp-space" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/></a>
     <a href="https://ai.google.dev/docs/agents_api" target="_blank"><img src="https://img.shields.io/badge/Google_ADK-EA4335?style=for-the-badge&logo=google&logoColor=white" alt="Google ADK"/></a>
     <a href="https://ai.google.dev/gemini-api/docs" target="_blank"><img src="https://img.shields.io/badge/Gemini_API-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini API"/></a>
     <a href="https://python.org/" target="_blank"><img src="https://img.shields.io/badge/Python_3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/></a>
@@ -187,7 +187,7 @@ google-adk/
 1️⃣ **Clone the repository**
 
 ```powershell
-git clone https://github.com/yourusername/mcp-space.git
+git clone https://github.com/tharuneshwar-s/mcp-space.git
 cd mcp-space/google-adk
 ```
 
