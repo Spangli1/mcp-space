@@ -35,6 +35,7 @@ This project is a Model Context Protocol (MCP) server generator built using Goog
   <img src="./public/images/key-features.svg" alt="Key Features" width="100%"/>
 </div>
 
+
 The Google ADK component of MCP Space enables users to generate MCP servers through conversational interactions. The system uses specialized agents to collect information, generate code, and build project files.
 
 <div align="center">
